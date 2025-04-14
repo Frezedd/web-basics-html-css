@@ -18,7 +18,7 @@
 
   .side-by-side {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
   }
 
@@ -33,7 +33,15 @@
     width: 150px;
     font-weight: bold;
     font-size: medium;
+    border: none;
+    transition: opacity 1s;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
   }
+
+  .Request-button:hover{
+    opacity: 0.6;
+  }
+
   .Amazon-button {
     background-color: rgb(255, 216, 20);
     height: 40px;
@@ -42,7 +50,14 @@
     font-weight: bold;
     border: none;
     border-radius: 27px;
+    transition: opacity 1s;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
   }
+
+  .Amazon-button:hover{
+    opacity: 0.6;
+  }
+
   .GitHub-button {
     background-color: rgb(46, 164, 79);
     color: white;
@@ -52,6 +67,12 @@
     font-weight: bold;
     border: none;
     border-radius: 4px;
+    transition: opacity 1s;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .GitHub-button:hover{
+    opacity: 0.7;
   }
   .Bootstrap-button {
     background-color: rgb(121, 82, 179);
@@ -62,7 +83,14 @@
     font-weight: bold;
     border: none;
     border-radius: 4px;
+    transition: opacity 1s;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
   }
+
+  .Bootstrap-button:hover{
+    opacity: 0.7;
+  }
+
   .Download-button {
     background-color: white;
     color: rgb(108, 117, 125);
@@ -72,7 +100,19 @@
     font-weight: bold;
     border-radius: 4px;
     border: 1px solid rgb(108, 117, 125);
+    transition: background-color 1s, color 1s, opacity 1s;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
   }
+
+  .Download-button:hover{
+    background-color: rgb(108, 117, 125);
+    color: white;
+  }
+
+  .Download-button:active{
+    opacity: 0.4;
+  }
+
   .Linkedin-button {
     background-color: rgb(10, 102, 194);
     color: white;
@@ -82,7 +122,14 @@
     font-weight: bold;
     border: none;
     border-radius: 27px;
+    transition: opacity 1s;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
   }
+
+  .Linkedin-button:hover{
+    opacity: 0.7;
+  }
+
   .Save-button {
     background-color: white;
     color: rgb(10, 102, 194);
@@ -92,7 +139,19 @@
     font-weight: bold;
     border-radius: 25px;
     border: 1px solid rgb(10, 102, 194);
+    transition: background-color 1s, color 1s, opacity 1s;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
   }
+
+  .Save-button:hover{
+    background-color: rgb(10, 102, 194);
+    color: white;
+  }
+
+  .Save-button:active{
+    opacity: 0.4;
+  }
+
 </style>
 
 <div class="button-container">

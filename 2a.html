@@ -31,8 +31,13 @@
 
   .Href {
     color: rgb(0, 113, 133);
-		font-size: medium;
+	font-size: medium;
+	transition: color 1s;
   }
+
+  a:hover{
+		color: rgb(255, 216, 20)
+	}
 
 	.Nike{
 		font-weight: bold;
@@ -43,15 +48,29 @@
 		color: rgb(0, 118, 0);
 		font-weight: bold;
 	}
+
 	.Free{
 		font-size: larger;
 	}
+
 	.Add{
 		background-color: rgb(255, 216, 20);
+		transition: opacity 1s;
 	}
+	
+	.Add:hover{
+		opacity: 0.5;
+	}
+
 	.Buy{
 		background-color: rgb(255, 164, 28);
+		transition: opacity 1s;
 	}
+
+	.Buy:hover{
+		opacity: 0.5;
+	}
+
 </style>
 
 <div class="paragraph-container">	

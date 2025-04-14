@@ -1,0 +1,151 @@
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Paragraph-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .product-box {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    gap: 15px;
+  }
+
+  .Product-1 {
+    background-color: rgb(19, 195, 219);
+  }
+
+  .Product-2 {
+    background-color: rgb(217, 122, 234);
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+    padding-left: 10px;
+    flex: 1;
+  }
+
+  .Nike {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .Stock {
+    color: green;
+  }
+
+  .Free {
+    font-size: 14px;
+    color: gray;
+  }
+
+  .Amazon {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    transition: color 1s;
+    cursor: pointer;
+  }
+
+  .Amazon:hover {
+    color: rgb(209, 209, 11);
+  }
+
+  .product-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .add-to-cart, .buy-now {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+  }
+
+  .add-to-cart {
+    background-color: #e2ea04;
+    color: white;
+  }
+
+  .add-to-cart:hover {
+    opacity: 0.7;
+  }
+
+  .buy-now {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .buy-now:hover {
+    opacity: 0.8;
+  }
+</style>
+
+<div class="Paragraph-container">
+  <h1 class="hero">Shop the Best Deals Today!</h1>
+
+  <a href="https://www.amazon.com/" target="_blank" class="Amazon">
+    Back to Amazon
+  </a>
+
+  <div class="product-box Product-1">
+    <img
+      src="https://m.media-amazon.com/images/I/61FttXNS4UL._AC_UL480_FMwebp_QL65_.jpg"
+      alt="Nike Shoes"
+      class="product-image"
+    />
+
+    <div class="product-info">
+      <p class="Nike">Nike Black Running Shoes</p>
+      <p class="Stock">$39 in stock</p>
+      <p class="Free">Free delivery tomorrow.</p>
+      <div class="product-buttons">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-box Product-2">
+    <img
+      src="https://m.media-amazon.com/images/I/81aqqbb9FiS._AC_UL480_FMwebp_QL65_.jpg"
+      alt="Nike Shoes"
+      class="product-image"
+    />
+
+    <div class="product-info">
+      <p class="Nike">Nike Black Running Shoes</p>
+      <p class="Stock">$29 in stock</p>
+      <p class="Free">Free delivery tomorrow.</p>
+      <div class="product-buttons">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>

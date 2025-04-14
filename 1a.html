@@ -1,44 +1,120 @@
 <style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center; /* Vertical center */
+    background-color: #f4f4f4; /* Soft background */
+    font-family: Arial, sans-serif;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;/* space between buttons */
+  }
+
+  .side-by-side {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
   .Request-button {
     background-color: black;
     color: white;
     height: 55px;
     width: 150px;
+    font-weight: bold;
     font-size: medium;
   }
   .Amazon-button {
-    background-color: rgba(255, 216, 20);
+    background-color: rgb(255, 216, 20);
     height: 40px;
     width: 200px;
     font-size: medium;
-		font: bold;
-		border: none;
-		border-radius: 27px;
-
+    font-weight: bold;
+    border: none;
+    border-radius: 27px;
   }
-
+  .GitHub-button {
+    background-color: rgb(46, 164, 79);
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+  }
+  .Bootstrap-button {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    height: 55px;
+    width: 140px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+  }
+  .Download-button {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    height: 55px;
+    width: 140px;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid rgb(108, 117, 125);
+  }
+  .Linkedin-button {
+    background-color: rgb(10, 102, 194);
+    color: white;
+    height: 55px;
+    width: 230px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 27px;
+  }
+  .Save-button {
+    background-color: white;
+    color: rgb(10, 102, 194);
+    height: 55px;
+    width: 100px;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 1px solid rgb(10, 102, 194);
+  }
 </style>
 
-<button class="Request-button">
-	Request now
-</button>
+<div class="button-container">
+  <button class="btn Request-button">Request now</button>
+  <br />
 
-<button class="Amazon-button">
-	Add to Cart
-</button>
+  <button class="btn Amazon-button">Add to Cart</button>
+  <br />
 
-<button class="GitHub-button">
-	Sing UP
-</button>
+  <button class="btn GitHub-button">Sign UP</button>
+  <br />
 
-<button class="Bootstrap-button">
-	Get started
-</button>
+  <div class="side-by-side">
+    <button class="btn Bootstrap-button">Get started</button>
 
-<button class="Bootstrap-button">
-	Download
-</button>
+    <button class="btn Download-button">Download</button>
+  </div>
+  <br />
 
-<button class="Linkedin-button">
-	Apply on company website
-</button>
+  <div class="side-by-side">
+    <button class="btn Linkedin-button">Apply on company website</button>
+
+    <button class="btn Save-button">Save</button>
+  </div>
+</div>
